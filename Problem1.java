@@ -27,8 +27,8 @@ public class Problem1 {
     public static void sort(ArrayList<Number> list) {
         Number[] nums = list.toArray(new Number[list.size()]);
 
-        for (int i=0; i<10; i++) {
-            for (int j=0; j<10; j++) {
+        for (int i=1; i < 10; i++) {
+            for (int j=0; j < 10-i; j++) {
                 if (nums[j].doubleValue() > nums[j + 1].doubleValue()) {
                     Number temp = nums[j];
                     nums[j] = nums[j+1];
@@ -38,7 +38,7 @@ public class Problem1 {
         }
 
         list.clear();
-        for (int i=0; i<10; i++) {
+        for (int i=0; i < 10; i++) {
             list.add(nums[i]);
         }
     }
