@@ -5,7 +5,7 @@ public class Problem1 {
         Scanner input = new Scanner(System.in);
 
         // 필요한 자료형을 넣어주세요
-        ArrayList<Number> list = new ArrayList<>();
+        ArrayList<Number> list = new ArrayList<Number>(10);
         System.out.print("Enter five integers and five doubles: ");
 
         for (int i=0; i<5; i++) {
