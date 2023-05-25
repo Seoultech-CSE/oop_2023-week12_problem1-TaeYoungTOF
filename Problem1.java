@@ -38,6 +38,7 @@ public class Problem1 {
         }
 
         list.clear();
+        
         for (int i=0; i < 10; i++) {
             list.add(nums[i]);
         }
